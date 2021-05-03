@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>동아리 정보</title>
+<link rel="stylesheet" type="text/css" href="css_styles.css">
+<style>
+	html, body{
+		background-color:#f6f6f6;
+	}
+	#header{
+		width:100%;
+		height:60%;
+		position:relative;
+		text-align:center;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom:100px;
+	}
+	#container{
+		width:100%;
+		height:100%;
+	}
+	#item_container{
+		display:flex;
+		align-items: center;	
+		justify-content: center;
+		flex-direction:column;
+	}
+	.item_image{
+		width:400px;
+		height:400px;
+	}
+	.item_block{
+		width:60%;
+		display:grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-template-rows:1f;
+		gap: 20px;
+		border-radius:20px;
+		background-color:white;
+		margin-bottom:100px;
+		padding:20px;
+		box-shadow: 0 1px 1px 0 #777;
+	}
+</style>
+</head>
+<body>
+<nav class="bar">
+	<ul>
+		<a href="sign_up.html"><li>입부 신청+</li></a>
+		<a href="projects.html"><li>프로젝트+</li></a>
+		<a href="index.html"><li>우리는<img src="android-developers.svg" alt="developers" width="200px" height="auto">입니다.</li></a>
+		<a href="volunteer.html"><li>봉사활동+</li></a>
+		<a href="information.html"><li>동아리 정보+</li></a>
+	</ul>
+</nav>
+<header id="header">
+	<div style="position:absolute; background-color:white; opacity:0.7; width:100%; height:100%;"></div>
+	<div style="position:absolute;">
+		<h1 style="font-size:4em; padding-right:5px;">
+		자유로움, 즐거움, 조화로움</h1>	
+	</div>
+	<img src="students.png" width="auto" height="100%">	
+</header>
+<div id="container">
+	<div id="item_container">
+		<div class="item_block">
+			<img src="free.png" class="item_image">
+			<div class="item">
+				<h2>자유롭다</h2>
+				<p>가입조건 없음.</p>
+				<p>누구나 참여할 수 있는 동아리에요.</p>
+				<p>물론 성실하게 참여해야 해요.</p>
+			</div>
+		</div>
+		
+		<div class="item_block">
+			<img src="fun.png" class="item_image">
+			<div>
+			<h2>즐겁다</h2>
+			<p>자신이 원하는 프로젝트에 참여해서 마음껏 역량을 펼치세요.</p>
+			<p>사이드 프로젝트에도 재밌는게 많아요.</p>
+			</div>
+		</div>
+		
+		<div class="item_block">
+			<img src="harmony.png" class="item_image">
+			<div>
+			<h2>조화롭다</h2>
+			<p>다양한 봉사활동에 참여해서 조화를 만들어가요.</p>
+			<p>나누면 나눌수록 곱해지는 기적이 느껴져요.</p>
+			</div>
+		</div>
+		
+		<div class="item_block">
+			<img src="location.jpg" class="item_image">
+			<div>
+			<h2>위치</h2>
+			<p>경기 성남시 수정구 성남대로 1342</p>
+			</div>
+		</div>
+		
+		<div class="item_block">
+			<img src="T.png" class="item_image">
+			<div>
+			<h2>웹페이지 제작자 정보</h2>
+			<p>강민재</p>
+			<p>github : github.com/kangminjae02</p>
+			<p>instagram : instagram.com/kangminjae02</p>
+			<p>문의 메일 : kmj02k@gachon.ac.kr</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>봉사 활동</title>
+<link rel="stylesheet" type="text/css" href="css_styles.css">
+<style>
+	#header{
+		width:100%;
+		height:90%;
+		position:relative;
+		text-align:left;
+		display:flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#container{
+		width:100%;
+		height:100%;
+		display:flex;
+		align-items: center;	
+		justify-content: center;
+	}
+	#container_item{
+		width:80%;
+		height:100%;
+	}
+	h2{
+		margin-bottom:20px;
+	}
+	.grid_container{
+		display:grid;
+		grid-template-columns: repeat(3,1fr);
+		grid-template-rows:1f;
+		gap: 20px;
+		text-align:center;
+	}
+	.item_name{
+		display:block;
+		font-size:20px;
+		font-weight:bold;
+	}
+	.item_block{
+		border-radius:10px;
+		box-shadow: 0 0 10px 0 #777;
+		background-color:#3ddc84;
+	}
+	.item_img{
+		width:200px;
+		height:200px;
+		margin:10px;
+	}
+	#calendar_table{
+		width:100%;
+		height:100%;
+		text-align:center;
+		background-color:#eff7cf;
+		border-radius:10px;	
+	}
+	#calendar_table th{
+		border-bottom:solid 5px #3ddc84;
+	}
+	#calendar_container{
+		padding-bottom:100px;
+	}
+
+
+</style>
+</head>
+<body>
+<nav class="bar">
+	<ul>
+		<a href="sign_up.html"><li>입부 신청+</li></a>
+		<a href="projects.html"><li>프로젝트+</li></a>
+		<a href="index.html"><li>우리는<img src="android-developers.svg" alt="developers" width="200px" height="auto">입니다.</li></a>
+		<a href="volunteer.html"><li>봉사활동+</li></a>
+		<a href="information.html"><li>동아리 정보+</li></a>
+	</ul>
+</nav>
+<header id="header">
+	<div style="position:absolute; background-color:white; opacity:0.7; width:100%; height:100%;"></div>
+	<div style="position:absolute;">
+		<h1 style="font-size:4em; padding-right:5px;"><span style="border-bottom:solid 5px;">나눔</span>에서
+		<br><span style="border-bottom:solid 5px;">배움</span>을 얻다</h1>	
+		<p></p>
+	</div>
+	<img src="volunteer.png" width="auto" height="100%">
+</header>
+<nav class="bar">
+	<ul>
+		<a href="#regular"><li>> 정기 교육 봉사</li></a>
+		<a href="#irreguler"><li>> 일반 봉사</li></a>
+		<a href="#calendar"><li>> 소규모, 개인 봉사</li></a>
+	</ul>
+</nav>
+<article id="container">
+	<div id="container_item">
+		<h2 id="regular">정기 교육 봉사</h2>
+		<section id="regular_container" class="grid_container">
+			<div class="item_block" style="background-color:#eff7cf;">
+				<img class="item_img" src="place1.png" alt="">
+				<span class="item_name">A 정기봉사</span>
+				<ul>
+					<li>#화, 금</li>
+					<li>#초등학생</li>
+					<li>#스케치 프로그램</li>
+				</ul>
+			</div>
+			<div class="item_block" style="background-color:#3ddc84;">
+				<img class="item_img" src="place2.png" alt="">
+				<span class="item_name">B 정기봉사</span>
+				<ul>
+					<li>#월, 목</li>
+					<li>#초등학생</li>
+					<li>#엔트리 프로그램</li>
+				</ul>
+			</div>
+			<div class="item_block" style="background-color:#77c159;">
+				<img class="item_img" src="place3.png" alt="">
+				<span class="item_name">C 정기봉사</span>
+				<ul>
+					<li>#수</li>
+					<li>#어린이</li>
+					<li>#놀이</li>
+				</ul>
+			</div>
+		</section>
+		<h2 id="irreguler" style="margin-top:100px;">일반 봉사</h2>
+		<section id="irregular_container" class="grid_container">
+			<div class="item_block" style="background-color:#3ddc84;">
+				<img class="item_img" src="place1.png" alt="">
+				<span class="item_name">A 봉사</span>
+				<ul>
+					<li>#5월 2일 ~ 5월 22일</li>
+					<li>#중학생</li>
+					<li>#C언어</li>
+				</ul>
+			</div>
+			<div class="item_block" >
+				<img class="item_img" src="place2.png" alt="">
+				<span class="item_name">B 봉사</span>
+				<ul>
+					<li>#5월 5일</li>
+					<li>#어린이</li>
+					<li>#놀이</li>
+				</ul>
+			</div>
+			<div class="item_block" >
+				<img class="item_img" src="place3.png" alt="">
+				<span class="item_name">C 봉사</span>
+				<ul>
+					<li>#5월 5일</li>
+					<li>#놀이</li>
+				</ul>
+			</div>
+			<div class="item_block" >
+				<img class="item_img" src="place1.png" alt="">
+				<span class="item_name">D 봉사</span>
+				<ul>
+					<li>#5월 21일</li>
+					<li>#스케치 프로그램</li>
+				</ul>
+			</div>
+			<div class="item_block" >
+				<img class="item_img" src="place2.png" alt="">
+				<span class="item_name">E 봉사</span>
+				<ul>
+					<li>#5월 28일</li>
+					<li>#중학생</li>
+					<li>#엔트리 프로그램</li>
+				</ul>
+			</div>
+			<div class="item_block" >
+				<img class="item_img" src="place3.png" alt="">
+				<span class="item_name">F 봉사</span>
+				<ul>
+					<li>#6월 1일 ~ 6월 21일</li>
+					<li>#고등학생</li>
+					<li>#C언어 교육</li>
+				</ul>
+			</div>
+			<div class="item_block" >
+				<img class="item_img" src="place1.png" alt="">
+				<span class="item_name">G 봉사</span>
+				<ul>
+					<li>#5월 1일 ~ 5월 31일</li>
+					<li>#성인</li>
+					<li>#C언어 교육</li>
+				</ul>
+			</div>
+			<div class="item_block" >
+				<img class="item_img" src="place2.png" alt="">
+				<span class="item_name">H 봉사</span>
+				<ul>
+					<li>#6월 1일</li>
+					<li>#고등학생</li>
+					<li>#기초 프로그래밍</li>
+				</ul>
+			</div>
+			<div class="item_block" >
+				<img class="item_img" src="place3.png" alt="">
+				<span class="item_name">I 봉사</span>
+				<ul>
+					<li>#6월 1일 ~ 7월 1일</li>
+					<li>#초등학생</li>
+					<li>#기초 프로그래밍</li>
+				</ul>
+			</div>
+		</section>
+		
+		<h2 id="calendar" style="margin-top:100px;">소규모, 개인 봉사</h2>
+		<section id="calendar_container">
+			<p>현재 우리 동아리는 A 수련원, A 문화회관, A 문화의 집과 결연이 되어 있습니다</p>
+			<table id="calendar_table" cellspacing="10">
+			<thead>
+				<tr>
+					<th>가능 요일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th><th>일</th>
+				</tr>
+			</thead>
+			<tr>
+				<td>A 수련원</td>
+				<td>O</td> <td>O</td> <td>O</td> <td>O</td> <td>O</td> <td>O</td> <td>O</td>
+			</tr>
+			<tr>
+				<td>A 문화회관</td>
+				<td>O</td> <td>O</td> <td>O</td> <td>X</td> <td>O</td> <td>O</td> <td>O</td>
+			
+			</tr>
+			<tr>
+				<td>A 문화의 집</td>
+				<td>X</td> <td>X</td> <td>O</td> <td>O</td> <td>O</td> <td>O</td> <td>X</td>
+			</tr>
+		</table>
+		<p>
+			<ul>
+				<li>A 수련원 : 031-1234-1234</li>
+				<li>A 문화회관 : 010-1324-1234</li>
+				<li>A 문화의 집 : 02-1234-1234</li>
+			</ul>
+		</p>
+		</section>
+	</div>
+</article>
+</body>
+</html>
